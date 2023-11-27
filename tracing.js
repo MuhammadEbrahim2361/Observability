@@ -16,7 +16,7 @@ module.exports = (serviceName) => {
    const provider = new NodeTracerProvider({
        resource: new Resource({
            [SemanticResourceAttributes.SERVICE_NAME]: serviceName,
-       }),node index.js
+       }),
    });
    provider.addSpanProcessor(new SimpleSpanProcessor(exporter));
    provider.register();
